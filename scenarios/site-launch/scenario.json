@@ -1,0 +1,34 @@
+{
+  "id": "site-launch",
+  "version": "0.1.1",
+  "status": "trial",
+  "order": 2,
+  "icon": "rocket",
+  "legal": true,
+  "checked": "2026-10-07",
+  "minApp": "0.5.2",
+  "title": { "ru": "Запустить сайт в интернете", "en": "Put a website online" },
+  "summary": {
+    "ru": "Выбрать хостинг и домен, подключить их и опубликовать готовый сайт. Деньги вы платите сами, помощник ведёт за руку.",
+    "en": "Pick hosting and a domain, connect them and publish a finished site. You pay yourself; the helper guides you."
+  },
+  "result": {
+    "ru": "Сайт открывается по вашему адресу с замочком в адресной строке, почта на домене настроена, понятно, что платить и когда продлевать.",
+    "en": "The site opens at your own address with a padlock, domain mail is set up, and you know what to pay and when to renew."
+  },
+  "time": { "ru": "Около 1–3 часов, плюс ожидание обновления адреса (до суток)", "en": "About 1–3 hours, plus waiting for the address to propagate (up to a day)" },
+  "needs": [
+    { "kind": "document", "ru": "Готовый сайт в папке проекта (его можно сделать в сценарии «Создать сайт»)", "en": "A finished site in the project folder (you can make it in “Create a website”)" },
+    { "kind": "money", "ru": "Деньги на домен и хостинг: платите вы сами на сайтах сервисов, помощник сам ничего не покупает", "en": "Money for a domain and hosting: you pay on the service websites; the helper never buys anything" },
+    { "kind": "account", "ru": "Почта и телефон для регистрации у регистратора домена и на хостинге", "en": "An email and a phone number to register with a domain registrar and a hosting provider" },
+    { "kind": "document", "ru": "Данные владельца домена. Для физлица регистраторы могут запросить паспортные данные: уточните у выбранного регистратора", "en": "Domain owner details. Registrars may ask a private person for ID details: check with your registrar" },
+    { "kind": "info", "ru": "Решение: нужны ли формы, аналитика, продажи (это влияет на выбор хостинга)", "en": "A decision: do you need forms, analytics or sales (this affects the hosting choice)" }
+  ],
+  "lead": "launch-lead",
+  "shared": ["style", "money-and-publish", "legal-disclaimer"],
+  "skills": ["pick-hosting", "pick-domain", "publish-site", "site-mail", "shared:legal-flags-ru"],
+  "startPrompt": {
+    "ru": "Начни сценарий «Запустить сайт в интернете». Используй помощника launch-lead: поприветствуй меня, коротко расскажи план, напомни, что платить буду я сам, и задай первый вопрос.",
+    "en": "Start the scenario “Put a website online”. Use the launch-lead helper: greet me, outline the plan, remind me that I pay myself, and ask the first question."
+  }
+}

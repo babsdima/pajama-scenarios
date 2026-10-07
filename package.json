@@ -1,0 +1,11 @@
+{
+  "name": "pajama-scenarios",
+  "private": true,
+  "type": "module",
+  "description": "Каталог «Готовых сценариев» для Pajama: пакеты агент + навыки + правила под типовые задачи",
+  "scripts": {
+    "build": "node scripts/build-catalog.mjs",
+    "check": "node scripts/build-catalog.mjs --check",
+    "test": "node --test"
+  }
+}

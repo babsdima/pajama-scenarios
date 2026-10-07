@@ -1,0 +1,388 @@
+{
+  "format": 1,
+  "revision": 3,
+  "scenarios": [
+    {
+      "id": "presentation",
+      "version": "0.1.0",
+      "status": "trial",
+      "order": 3,
+      "icon": "presentation",
+      "legal": false,
+      "minApp": "0.5.2",
+      "title": {
+        "ru": "Презентация",
+        "en": "Presentation"
+      },
+      "summary": {
+        "ru": "От темы до готовых слайдов и текста выступления: структура, дизайн, проверка.",
+        "en": "From topic to finished slides and a speaking script: structure, design, review."
+      },
+      "result": {
+        "ru": "Презентация, которую можно открыть в браузере и сохранить в PDF, и заметки для выступления.",
+        "en": "A presentation you can open in a browser and save as PDF, plus speaker notes."
+      },
+      "time": {
+        "ru": "Около 1 часа",
+        "en": "About 1 hour"
+      },
+      "needs": [
+        {
+          "kind": "info",
+          "ru": "Тема, цель выступления и сколько у вас времени",
+          "en": "Topic, goal and how much time you have"
+        },
+        {
+          "kind": "info",
+          "ru": "Кто будет слушать и что они уже знают",
+          "en": "Who will listen and what they already know"
+        },
+        {
+          "kind": "document",
+          "ru": "Материалы, цифры и картинки, которые хотите использовать (если есть)",
+          "en": "Materials, figures and images you want to use (if any)"
+        }
+      ],
+      "lead": "deck-lead",
+      "skills": [
+        "deck-brief",
+        "deck-story",
+        "deck-build",
+        "deck-review"
+      ],
+      "startPrompt": {
+        "ru": "Начни сценарий «Презентация». Используй помощника deck-lead: поприветствуй меня, коротко расскажи план и задай первый вопрос о теме.",
+        "en": "Start the scenario “Presentation”. Use the deck-lead helper: greet me, outline the plan briefly and ask the first question about the topic."
+      },
+      "files": [
+        {
+          "path": "scenarios/presentation/scenario.json",
+          "sha256": "8c6d32e3cab5498c9524e39acfab3e139cc6afef13d0b3a7cadc8cff2e1bf0e7",
+          "size": 1966,
+          "role": "manifest"
+        },
+        {
+          "path": "shared/style.md",
+          "sha256": "1b38dda92ca211254f89f04c0241a2bd7ebec38baabf52ca63b38733cde3fdc3",
+          "size": 1612,
+          "role": "rules"
+        },
+        {
+          "path": "shared/money-and-publish.md",
+          "sha256": "d0200fe739a10a46cf2d496075c6b19c4a42b0f8adfb978a2f1be26c905648ca",
+          "size": 2370,
+          "role": "rules"
+        },
+        {
+          "path": "scenarios/presentation/CLAUDE.md",
+          "sha256": "b4c53962ae1f8b14bd195b502946f2c5676f6f93ad02277118ddc2141e2e21fe",
+          "size": 1003,
+          "role": "rules"
+        },
+        {
+          "path": "scenarios/presentation/agents/deck-lead.md",
+          "sha256": "f70409fd757d31eb1b6b0029abb11be890e59877bfbc7af3f75e1e15cb16aae8",
+          "size": 2506,
+          "role": "agent",
+          "dest": "deck-lead.md"
+        },
+        {
+          "path": "scenarios/presentation/skills/deck-brief/SKILL.md",
+          "sha256": "ebb228d63433134dcd1d9dcaf32d46f5de2ccfdf077577da115e6bb437301182",
+          "size": 1860,
+          "role": "skill",
+          "dest": "deck-brief/SKILL.md"
+        },
+        {
+          "path": "scenarios/presentation/skills/deck-story/SKILL.md",
+          "sha256": "79d34896f29e2ff4b201339d0e0f7c2e65df3eab1254839e7793ebfb1b607dbf",
+          "size": 2298,
+          "role": "skill",
+          "dest": "deck-story/SKILL.md"
+        },
+        {
+          "path": "scenarios/presentation/skills/deck-build/SKILL.md",
+          "sha256": "070585b6ac9464f0bec4f0010fadb2ea904e4a7e0d19d8c64376e3f8f55c4fd2",
+          "size": 3323,
+          "role": "skill",
+          "dest": "deck-build/SKILL.md"
+        },
+        {
+          "path": "scenarios/presentation/skills/deck-review/SKILL.md",
+          "sha256": "9f6330c2d8918682f74b535788ba8b8846e892060f0904c7333d13fa26059a6a",
+          "size": 2349,
+          "role": "skill",
+          "dest": "deck-review/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "site-create",
+      "version": "0.1.1",
+      "status": "trial",
+      "order": 1,
+      "icon": "globe",
+      "legal": true,
+      "checked": "2026-10-07",
+      "minApp": "0.5.2",
+      "title": {
+        "ru": "Создать сайт",
+        "en": "Create a website"
+      },
+      "summary": {
+        "ru": "Визитка, лендинг или небольшой сайт: от идеи до готовых страниц на вашем компьютере.",
+        "en": "A business card page, landing page or small site: from idea to finished pages on your computer."
+      },
+      "result": {
+        "ru": "Папка с готовым сайтом, который открывается в браузере, и список того, что нужно сделать самому перед публикацией.",
+        "en": "A folder with a finished site that opens in your browser, and a list of what you do yourself before publishing."
+      },
+      "time": {
+        "ru": "Около 1–2 часов",
+        "en": "About 1–2 hours"
+      },
+      "needs": [
+        {
+          "kind": "info",
+          "ru": "Что за сайт и для кого: пара предложений о вас или вашем деле",
+          "en": "What the site is and who it is for: a couple of sentences"
+        },
+        {
+          "kind": "document",
+          "ru": "Тексты, фото и логотип, если они уже есть (если нет — поможем придумать)",
+          "en": "Texts, photos and a logo if you already have them (if not, we will help)"
+        },
+        {
+          "kind": "info",
+          "ru": "Контакты, которые можно показать на сайте",
+          "en": "Contacts you are happy to show on the site"
+        }
+      ],
+      "lead": "site-lead",
+      "skills": [
+        "site-brief",
+        "site-design",
+        "site-build",
+        "site-seo",
+        "shared:legal-flags-ru"
+      ],
+      "startPrompt": {
+        "ru": "Начни сценарий «Создать сайт». Используй помощника site-lead: поприветствуй меня, коротко расскажи план из шагов и задай первый вопрос.",
+        "en": "Start the scenario “Create a website”. Use the site-lead helper: greet me, outline the steps briefly and ask the first question."
+      },
+      "files": [
+        {
+          "path": "scenarios/site-create/scenario.json",
+          "sha256": "6a0b07f8d37ccfdeedcaedb7e44b96619fc8f4ed3d5ef331916e014f67539169",
+          "size": 2221,
+          "role": "manifest"
+        },
+        {
+          "path": "shared/style.md",
+          "sha256": "1b38dda92ca211254f89f04c0241a2bd7ebec38baabf52ca63b38733cde3fdc3",
+          "size": 1612,
+          "role": "rules"
+        },
+        {
+          "path": "shared/money-and-publish.md",
+          "sha256": "d0200fe739a10a46cf2d496075c6b19c4a42b0f8adfb978a2f1be26c905648ca",
+          "size": 2370,
+          "role": "rules"
+        },
+        {
+          "path": "shared/legal-disclaimer.md",
+          "sha256": "8421cbbab6db682302071be3805efbc7082354c50403ad04b6561c17ab02c808",
+          "size": 2804,
+          "role": "rules"
+        },
+        {
+          "path": "scenarios/site-create/CLAUDE.md",
+          "sha256": "797f5fc05d5788bb90e7550ce6d2185a65b8c16b8fa8630eddb5c74e7a55e91c",
+          "size": 1324,
+          "role": "rules"
+        },
+        {
+          "path": "scenarios/site-create/agents/site-lead.md",
+          "sha256": "dd155682e3936370d2cdc1e8dade4b96a2011b4387437407c6e712bd323e353d",
+          "size": 3493,
+          "role": "agent",
+          "dest": "site-lead.md"
+        },
+        {
+          "path": "scenarios/site-create/skills/site-brief/SKILL.md",
+          "sha256": "1c58e88083b9a6b75c8fa6be3c82ac4445c2e565792b8d081440796265d48c94",
+          "size": 2687,
+          "role": "skill",
+          "dest": "site-brief/SKILL.md"
+        },
+        {
+          "path": "scenarios/site-create/skills/site-design/SKILL.md",
+          "sha256": "3177696faa0766573cc011c2cc4314c837c0fa3f858cea2ed9269c88c9d72364",
+          "size": 2764,
+          "role": "skill",
+          "dest": "site-design/SKILL.md"
+        },
+        {
+          "path": "scenarios/site-create/skills/site-build/SKILL.md",
+          "sha256": "82430dcd208f22a06a570658cbb7bef7b867165e149b5026240ede155b455ce5",
+          "size": 3346,
+          "role": "skill",
+          "dest": "site-build/SKILL.md"
+        },
+        {
+          "path": "scenarios/site-create/skills/site-seo/SKILL.md",
+          "sha256": "176908d48a42c115de9d59e2180875f37ffee10450c27e2faed3a59d608680c0",
+          "size": 2476,
+          "role": "skill",
+          "dest": "site-seo/SKILL.md"
+        },
+        {
+          "path": "shared/skills/legal-flags-ru/SKILL.md",
+          "sha256": "8d6d88889f5b829ec829df8468671e95b04155a999ac3c2288e9e1976bf81d11",
+          "size": 9974,
+          "role": "skill",
+          "dest": "legal-flags-ru/SKILL.md"
+        }
+      ]
+    },
+    {
+      "id": "site-launch",
+      "version": "0.1.1",
+      "status": "trial",
+      "order": 2,
+      "icon": "rocket",
+      "legal": true,
+      "checked": "2026-10-07",
+      "minApp": "0.5.2",
+      "title": {
+        "ru": "Запустить сайт в интернете",
+        "en": "Put a website online"
+      },
+      "summary": {
+        "ru": "Выбрать хостинг и домен, подключить их и опубликовать готовый сайт. Деньги вы платите сами, помощник ведёт за руку.",
+        "en": "Pick hosting and a domain, connect them and publish a finished site. You pay yourself; the helper guides you."
+      },
+      "result": {
+        "ru": "Сайт открывается по вашему адресу с замочком в адресной строке, почта на домене настроена, понятно, что платить и когда продлевать.",
+        "en": "The site opens at your own address with a padlock, domain mail is set up, and you know what to pay and when to renew."
+      },
+      "time": {
+        "ru": "Около 1–3 часов, плюс ожидание обновления адреса (до суток)",
+        "en": "About 1–3 hours, plus waiting for the address to propagate (up to a day)"
+      },
+      "needs": [
+        {
+          "kind": "document",
+          "ru": "Готовый сайт в папке проекта (его можно сделать в сценарии «Создать сайт»)",
+          "en": "A finished site in the project folder (you can make it in “Create a website”)"
+        },
+        {
+          "kind": "money",
+          "ru": "Деньги на домен и хостинг: платите вы сами на сайтах сервисов, помощник сам ничего не покупает",
+          "en": "Money for a domain and hosting: you pay on the service websites; the helper never buys anything"
+        },
+        {
+          "kind": "account",
+          "ru": "Почта и телефон для регистрации у регистратора домена и на хостинге",
+          "en": "An email and a phone number to register with a domain registrar and a hosting provider"
+        },
+        {
+          "kind": "document",
+          "ru": "Данные владельца домена. Для физлица регистраторы могут запросить паспортные данные: уточните у выбранного регистратора",
+          "en": "Domain owner details. Registrars may ask a private person for ID details: check with your registrar"
+        },
+        {
+          "kind": "info",
+          "ru": "Решение: нужны ли формы, аналитика, продажи (это влияет на выбор хостинга)",
+          "en": "A decision: do you need forms, analytics or sales (this affects the hosting choice)"
+        }
+      ],
+      "lead": "launch-lead",
+      "skills": [
+        "pick-hosting",
+        "pick-domain",
+        "publish-site",
+        "site-mail",
+        "shared:legal-flags-ru"
+      ],
+      "startPrompt": {
+        "ru": "Начни сценарий «Запустить сайт в интернете». Используй помощника launch-lead: поприветствуй меня, коротко расскажи план, напомни, что платить буду я сам, и задай первый вопрос.",
+        "en": "Start the scenario “Put a website online”. Use the launch-lead helper: greet me, outline the plan, remind me that I pay myself, and ask the first question."
+      },
+      "files": [
+        {
+          "path": "scenarios/site-launch/scenario.json",
+          "sha256": "fa446c68c6c96bd582ce6009c15aa4e002ce35703f3cb4e06d4a74bd9b4bdc6c",
+          "size": 3441,
+          "role": "manifest"
+        },
+        {
+          "path": "shared/style.md",
+          "sha256": "1b38dda92ca211254f89f04c0241a2bd7ebec38baabf52ca63b38733cde3fdc3",
+          "size": 1612,
+          "role": "rules"
+        },
+        {
+          "path": "shared/money-and-publish.md",
+          "sha256": "d0200fe739a10a46cf2d496075c6b19c4a42b0f8adfb978a2f1be26c905648ca",
+          "size": 2370,
+          "role": "rules"
+        },
+        {
+          "path": "shared/legal-disclaimer.md",
+          "sha256": "8421cbbab6db682302071be3805efbc7082354c50403ad04b6561c17ab02c808",
+          "size": 2804,
+          "role": "rules"
+        },
+        {
+          "path": "scenarios/site-launch/CLAUDE.md",
+          "sha256": "f75f39c37b4983a8540b9a6491ac940be5b958bd5fa87bc17cb33f92c15a1eb1",
+          "size": 1306,
+          "role": "rules"
+        },
+        {
+          "path": "scenarios/site-launch/agents/launch-lead.md",
+          "sha256": "9bdcb6ede7a3121ead1087ba7ebac464910adbe9b13665d3cec50991755f66f2",
+          "size": 3849,
+          "role": "agent",
+          "dest": "launch-lead.md"
+        },
+        {
+          "path": "scenarios/site-launch/skills/pick-hosting/SKILL.md",
+          "sha256": "e8afad5eb007834cee731258599809bebd00e57aec1c23cd9802fca8c0104da9",
+          "size": 4982,
+          "role": "skill",
+          "dest": "pick-hosting/SKILL.md"
+        },
+        {
+          "path": "scenarios/site-launch/skills/pick-domain/SKILL.md",
+          "sha256": "954836687bd94f7ae33af7d602e70ecb44f8043b707fee689fd509cd747d9457",
+          "size": 3952,
+          "role": "skill",
+          "dest": "pick-domain/SKILL.md"
+        },
+        {
+          "path": "scenarios/site-launch/skills/publish-site/SKILL.md",
+          "sha256": "284582439a8862bd47cc282ba42b7c0a8d45f8d81d5548bbe08f79c1f61dfdd8",
+          "size": 4732,
+          "role": "skill",
+          "dest": "publish-site/SKILL.md"
+        },
+        {
+          "path": "scenarios/site-launch/skills/site-mail/SKILL.md",
+          "sha256": "1b5cf832af3a0b2e5e54f26b71f7e57570501d650be8d6553fe4ad265d191c21",
+          "size": 2966,
+          "role": "skill",
+          "dest": "site-mail/SKILL.md"
+        },
+        {
+          "path": "shared/skills/legal-flags-ru/SKILL.md",
+          "sha256": "8d6d88889f5b829ec829df8468671e95b04155a999ac3c2288e9e1976bf81d11",
+          "size": 9974,
+          "role": "skill",
+          "dest": "legal-flags-ru/SKILL.md"
+        }
+      ]
+    }
+  ]
+}

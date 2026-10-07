@@ -1,0 +1,32 @@
+{
+  "id": "site-create",
+  "version": "0.1.1",
+  "status": "trial",
+  "order": 1,
+  "icon": "globe",
+  "legal": true,
+  "checked": "2026-10-07",
+  "minApp": "0.5.2",
+  "title": { "ru": "Создать сайт", "en": "Create a website" },
+  "summary": {
+    "ru": "Визитка, лендинг или небольшой сайт: от идеи до готовых страниц на вашем компьютере.",
+    "en": "A business card page, landing page or small site: from idea to finished pages on your computer."
+  },
+  "result": {
+    "ru": "Папка с готовым сайтом, который открывается в браузере, и список того, что нужно сделать самому перед публикацией.",
+    "en": "A folder with a finished site that opens in your browser, and a list of what you do yourself before publishing."
+  },
+  "time": { "ru": "Около 1–2 часов", "en": "About 1–2 hours" },
+  "needs": [
+    { "kind": "info", "ru": "Что за сайт и для кого: пара предложений о вас или вашем деле", "en": "What the site is and who it is for: a couple of sentences" },
+    { "kind": "document", "ru": "Тексты, фото и логотип, если они уже есть (если нет — поможем придумать)", "en": "Texts, photos and a logo if you already have them (if not, we will help)" },
+    { "kind": "info", "ru": "Контакты, которые можно показать на сайте", "en": "Contacts you are happy to show on the site" }
+  ],
+  "lead": "site-lead",
+  "shared": ["style", "money-and-publish", "legal-disclaimer"],
+  "skills": ["site-brief", "site-design", "site-build", "site-seo", "shared:legal-flags-ru"],
+  "startPrompt": {
+    "ru": "Начни сценарий «Создать сайт». Используй помощника site-lead: поприветствуй меня, коротко расскажи план из шагов и задай первый вопрос.",
+    "en": "Start the scenario “Create a website”. Use the site-lead helper: greet me, outline the steps briefly and ask the first question."
+  }
+}

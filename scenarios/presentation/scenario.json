@@ -1,0 +1,31 @@
+{
+  "id": "presentation",
+  "version": "0.1.0",
+  "status": "trial",
+  "order": 3,
+  "icon": "presentation",
+  "legal": false,
+  "minApp": "0.5.2",
+  "title": { "ru": "Презентация", "en": "Presentation" },
+  "summary": {
+    "ru": "От темы до готовых слайдов и текста выступления: структура, дизайн, проверка.",
+    "en": "From topic to finished slides and a speaking script: structure, design, review."
+  },
+  "result": {
+    "ru": "Презентация, которую можно открыть в браузере и сохранить в PDF, и заметки для выступления.",
+    "en": "A presentation you can open in a browser and save as PDF, plus speaker notes."
+  },
+  "time": { "ru": "Около 1 часа", "en": "About 1 hour" },
+  "needs": [
+    { "kind": "info", "ru": "Тема, цель выступления и сколько у вас времени", "en": "Topic, goal and how much time you have" },
+    { "kind": "info", "ru": "Кто будет слушать и что они уже знают", "en": "Who will listen and what they already know" },
+    { "kind": "document", "ru": "Материалы, цифры и картинки, которые хотите использовать (если есть)", "en": "Materials, figures and images you want to use (if any)" }
+  ],
+  "lead": "deck-lead",
+  "shared": ["style", "money-and-publish"],
+  "skills": ["deck-brief", "deck-story", "deck-build", "deck-review"],
+  "startPrompt": {
+    "ru": "Начни сценарий «Презентация». Используй помощника deck-lead: поприветствуй меня, коротко расскажи план и задай первый вопрос о теме.",
+    "en": "Start the scenario “Presentation”. Use the deck-lead helper: greet me, outline the plan briefly and ask the first question about the topic."
+  }
+}
